@@ -823,7 +823,6 @@
       <div class="rank-tile ${medal(r.rank)}">
         <div class="rt-name">${r.name}</div>
         <div class="rt-rank">${r.rank == null ? '—' : '#' + r.rank}<span>${r.rank == null ? 'no data' : 'of ' + r.of}</span></div>
-        <div class="rt-val">${fmtMetric(r, r.value, cur)} <span class="muted">industry avg ${fmtMetric(r, r.avg, cur)}</span></div>
       </div>`).join('');
     const cols = A.PEER_METRICS.filter((mt) => !(m.isFinancial && mt.key === 'de'));
     const row = (r) => {
